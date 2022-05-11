@@ -80,4 +80,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Creator Kit - FPS/Scenes/SceneWorkflow/Level Scenes/Level04/Level4Part5.unity
     guid: 015f65de64ae04947a91e64a5141535b
+  - enabled: 1
+    path: Assets/Creator Kit - FPS/Scenes/SceneWorkflow/Menus/PauseMenu.unity
+    guid: e86ab43d136126595b65660d6ecc7ec3
   m_configObjects: {}

@@ -16,9 +16,9 @@ public class MainMenu : MonoBehaviour
         HideMenu();
         ShowLoadingScreen();
         //Load the Scene asynchronously in the background
-        scenesToLoad.Add(SceneManager.LoadSceneAsync("Gameplay"));
         //Additive mode adds the Scene to the current loaded Scenes, in this case Gameplay scene
-        scenesToLoad.Add(SceneManager.LoadSceneAsync("Level01Part01", LoadSceneMode.Additive));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("Gameplay1"));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("Level1Part1", LoadSceneMode.Additive));
         StartCoroutine(LoadingScreen());
     }
 
@@ -27,9 +27,9 @@ public class MainMenu : MonoBehaviour
         HideMenu();
         ShowLoadingScreen();
         //Load the Scene asynchronously in the background
-        //scenesToLoad.Add(SceneManager.LoadSceneAsync("Gameplay"));
         //Additive mode adds the Scene to the current loaded Scenes, in this case Gameplay scene
-        //scenesToLoad.Add(SceneManager.LoadSceneAsync("Level01Part01", LoadSceneMode.Additive));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("Gameplay1"));
+        scenesToLoad.Add(SceneManager.LoadSceneAsync("Level1Part1", LoadSceneMode.Additive));
         StartCoroutine(LoadingScreen());
     }
 
@@ -63,5 +63,6 @@ public class MainMenu : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+        UnityEditor.EditorApplication.isPlaying = false;
     }
 }
